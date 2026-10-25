@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precious Mashawa | Software Engineer</title>
+<meta name="description" content="Portfolio of Precious Mashawa, Software Engineering graduate from Harare, Zimbabwe. Web development, AI and UI work.">
+<link rel="icon" href="assets/dp_female.svg">
+<link rel="canonical" href="https://preciousmashawa.co.zw/">
+<meta name="theme-color" content="#141517">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Precious Mashawa | Software Engineer">
+<meta property="og:description" content="Software Engineering graduate building web apps, AI and clean user interfaces. Harare, Zimbabwe.">
+<meta property="og:url" content="https://preciousmashawa.co.zw/">
+<meta property="og:image" content="https://preciousmashawa.co.zw/assets/landscape-night.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <a class="brand" href="#home">PM<span>.</span></a>
+  <nav class="links" id="links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="hub-pill" id="hubNav" href="#" target="_blank" rel="noopener">My Services ↗</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch light or dark theme">☀️</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <h1 class="hello">Hi <img src="assets/wave.gif" alt="waving hand" class="wave">, I'm Precious Mashawa</h1>
+    <div class="avatar"><img src="assets/dp_female.svg" alt="Illustration of Precious Mashawa"></div>
+    <p class="typed">I am into <span id="typed"></span><span class="cursor">|</span></p>
+    <div class="hero-ctas">
+      <a class="btn" href="#projects">View my projects</a>
+      <a class="btn ghost" id="cvBtn" href="assets/Precious_Mashawa_CV.pdf" download>Download CV</a>
+    </div>
+    <div class="socials" id="socials"></div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll down">⌄</a>
+</section>
+
+<!-- STATS -->
+<section class="stats" aria-label="Highlights">
+  <div class="stat"><strong>2:1</strong><span>BSc (Hons) Software Engineering</span></div>
+  <div class="stat"><strong>1 yr</strong><span>Industry attachment at NetOne</span></div>
+  <div class="stat"><strong id="certCount">0</strong><span>LinkedIn Learning certificates</span></div>
+  <div class="stat"><strong id="projCount">0</strong><span>Projects built</span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about-text">
+      <h2 class="title">About me</h2>
+      <p>I'm a Software Engineering graduate (BSc Hons, Upper Second Class) from Bindura University of Science Education, based in Harare, Zimbabwe.</p>
+      <p>I enjoy building complete, working products: clean web interfaces, the systems behind them, and lately AI. My final-year project used deep learning to predict a person's blood group from a fingerprint image and served it through a simple web app for hospital staff.</p>
+      <p>I also spent 1 year on industrial attachment at NetOne, working on billing systems, USSD and SMS services and the Service Delivery Platform.</p>
+      <div class="about-actions">
+        <a class="btn" href="#projects">See my projects <img src="assets/arrow-right-circle.svg" alt=""></a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <img class="about-art" src="assets/header-female.svg" alt="Illustration of a woman working at a desk">
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section alt" id="skills">
+  <div class="container">
+    <h2 class="title">Skills</h2>
+    <div class="skills" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="title">Experience &amp; Education</h2>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt" id="projects">
+  <div class="container">
+    <h2 class="title">Projects</h2>
+    <p class="lead">Open a live project or read the code.</p>
+    <div class="cards" id="projectGrid"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+  <div class="container">
+    <h2 class="title">Certificates</h2>
+    <p class="lead">LinkedIn Learning, 2026. Click a certificate to view it.</p>
+    <div class="certs" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- HUB BANNER (links out; this site stays a portfolio) -->
+<section class="hub-banner">
+  <div class="container hub-inner">
+    <div>
+      <small>Looking to hire me for a project?</small>
+      <h2>Websites, automation and digital services</h2>
+      <p>My services live on a separate site, Precious' Hub.</p>
+    </div>
+    <a class="btn light" id="hubBanner" href="#" target="_blank" rel="noopener">Visit Precious' Hub ↗</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="container contact">
+    <h2 class="title">Let's work together</h2>
+    <p class="lead">I'm open to entry-level roles in software development, AI and UI. Reach me any time.</p>
+    <div class="contact-cards">
+      <a class="contact-card" id="emailLink" href="#"><span>✉️</span><strong>Email</strong><small id="emailText"></small></a>
+      <a class="contact-card" id="phoneLink" href="#"><span>📞</span><strong>Phone</strong><small id="phoneText"></small></a>
+      <a class="contact-card" id="hubLink" href="#"><span>🛠️</span><strong>My services</strong><small>Websites, automation and more</small></a>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <h3>Send me a message</h3>
+      <div class="row">
+        <input name="name" placeholder="Your name" required aria-label="Your name">
+        <input name="org" placeholder="Organisation (optional)" aria-label="Organisation">
+      </div>
+      <textarea name="message" rows="5" placeholder="How can I help?" required aria-label="Message"></textarea>
+      <button class="btn" type="submit">Send via email</button>
+      <small class="form-note">This opens your email app with the message ready to send.</small>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER LANDSCAPE -->
+<footer class="footer">
+  <div class="landscape" role="img" aria-label="Mountains and forest landscape"></div>
+  <p>© <span id="year"></span> Precious Mashawa · Harare, Zimbabwe</p>
+</footer>
+
+<a class="to-top" id="toTop" href="#home" aria-label="Back to top">↑</a>
+
+<!-- CERTIFICATE VIEWER -->
+<div class="modal" id="modal" aria-hidden="true">
+  <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

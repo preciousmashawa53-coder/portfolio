@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://preciousmashawa.co.zw/sitemap.xml
